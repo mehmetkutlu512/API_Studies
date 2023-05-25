@@ -23,9 +23,31 @@ public class RequestResponse {
 
     public static void main(String[] args) {
 
+        //Get request nasıl yapılır:
         String url = "https://petstore.swagger.io/v2/pet/45";
-        Response response = given().get(url);
-        response.prettyPrint();
-    }
+        Response response = given().get(url);//import static io.restassured.RestAssured.given;
+        // response.prettyPrint(); //prettyPrint() methodu ile responu consola yazdırdık.
 
+        //Status code nasıl yazdırılır:
+        System.out.println("Status Code = " + response.statusCode());
+
+        //Content Type nasıl yazdırılır:
+        System.out.println("Content Type = " + response.contentType());
+
+        //Status Line nasıl yazdırılır:
+        System.out.println("Status Line = "+ response.statusLine());
+
+        // Header nasıl yazdırılır:
+        System.out.println(response.header("Date"));
+        System.out.println(response.header("Connection"));
+        System.out.println(response.header("Server"));
+
+        // Headers nasıl yazdırılır:
+        System.out.println("******HEADERS*********");
+        System.out.println(response.headers());
+
+        // Time nasıl yazdırılır:
+        System.out.println("\nTime = " + response.time());
+
+    }
 }
