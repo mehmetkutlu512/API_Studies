@@ -4,8 +4,7 @@ import io.restassured.response.Response;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class Get02 {
             /*
@@ -46,6 +45,10 @@ public class Get02 {
 
         //Response body does not contain "TechProEd"
         assertFalse(response.asString().contains("TechProEd"));
+
+        //Server is "Cowboy"
+        String server = response.header("Server");
+        assertEquals("Cowboy", server);
 
     }
 }
