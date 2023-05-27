@@ -8,7 +8,14 @@ day03-24.05.2023
     Get04
     Get05
     Get06
-    base_urls package altında
+    --base_urls package altında
     HerOkuAppBaseUrl
     JsonPlaceHolderBaseUrl
 day04-25.05.2023
+    Get07
+    --post_request package altında
+    Post01
+    --put_request package altında
+    Put01
+    --test_data package altında
+    JsonPlaceHolderTestData
