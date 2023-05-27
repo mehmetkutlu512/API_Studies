@@ -1,6 +1,14 @@
-day01
+day02-23.05.2023
     get_request package altında
     Get01
     Get02
     Get03
     RequestResponse
+day03-24.05.2023
+    Get04
+    Get05
+    Get06
+    base_urls package altında
+    HerOkuAppBaseUrl
+    JsonPlaceHolderBaseUrl
+day04-25.05.2023
