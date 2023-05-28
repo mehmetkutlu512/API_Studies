@@ -26,7 +26,7 @@ public class RequestResponse {
     public static void main(String[] args) {
 
         //Get request nasıl yapılır:
-        String url = "https://petstore.swagger.io/v2/pet/45";
+        String url = "https://petstore.swagger.io/v2/pet/42";
         Response response = given().get(url);//import static io.restassured.RestAssured.given;
         // response.prettyPrint(); //prettyPrint() methodu ile responu consola yazdırdık.
 
