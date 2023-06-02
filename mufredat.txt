@@ -19,3 +19,8 @@ day04-25.05.2023
     Put01
     --test_data package altında
     JsonPlaceHolderTestData
+day05-27.05.2023
+    -Get08
+    -Get09
+    -Post02
+    -HerOkuAppTestData
