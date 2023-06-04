@@ -54,9 +54,10 @@ public class Get10 extends GoRestBaseUrl {
                         "meta.pagination.links.current", equalTo("https://gorest.co.in/public/v1/users?page=1"),
                         "data", hasSize(10),
                         "data.status", hasItem("active"),
-                        "data.name", hasItems("Chandini Trivedi", "Balagovind Pandey", "Yogesh Pilla"));
+                        "data.name", hasItems("Gangesh Trivedi", "Ekalavya Agarwal JD", "Harit Shah"));
 
         //Kadın ve erkek sayılarını karşılaştıralım
+        //1.Yol: For loop ile kadın ve erkek saysını bulup assert yapalım
         JsonPath jsonPath = response.jsonPath();
         List<String> gendrList = jsonPath.getList("data.gender");
         System.out.println("gendrList = " + gendrList);
@@ -68,9 +69,18 @@ public class Get10 extends GoRestBaseUrl {
             }
         }
         System.out.println("kadinSayisi = " + kadinSayisi);
-        assertTrue(kadinSayisi<=(gendrList.size()-kadinSayisi));
+        assertTrue(kadinSayisi>=(gendrList.size()-kadinSayisi));
 
         //2.Yol Grovy;
+        //Groovy kullanarak list içerisindeki kadın kullanıcı elementlerini filtreleyerek kadın kullanıcı sayıssını bulduk.
+        int kadinSayisiGroovy = jsonPath.getList("data.findAll{it.gender=='female'}").size();
+        System.out.println("kadinSayisiGroovy = " + kadinSayisiGroovy);
+
+        //Groovy kullanarak list içerisindeki erkek kullanıcı elementlerini filtreleyerek erkek kullanıcı sayıssını bulduk.
+        int erkekSayisiGroovy = jsonPath.getList("data.findAll{it.gender=='male'}").size();
+        System.out.println("erkekSayisiGroovy = " + erkekSayisiGroovy);
+
+        assertTrue(kadinSayisiGroovy>=erkekSayisiGroovy);
 
     }
 }

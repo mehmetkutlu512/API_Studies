@@ -24,3 +24,18 @@ day05-27.05.2023
     -Get09
     -Post02
     -HerOkuAppTestData
+day06-28.05.2023
+    -Patch01
+    -Post03
+    -Get10
+    -GoRestBaseUrl
+    -JsonPlaceHolderPojo
+day07-30.05.2023
+    -Get11
+    -BookingDatesPojo
+    -BookingPojo
+    -Get12
+    -GoRestDataPojos
+    -GoRestPojo
+    -Post04
+    -BookingResponsePojo
