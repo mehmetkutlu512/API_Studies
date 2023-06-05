@@ -39,3 +39,15 @@ day07-30.05.2023
     -GoRestPojo
     -Post04
     -BookingResponsePojo
+day08-31.05.2023
+    -Get13_ObjectMapper_Map
+    -Get13_ObjectMapper_Pojo
+    -Delete01
+    -ObjectMapperUtils
+    -Put02
+    -DummyRestApiDataPojo
+    -DummyRestApiResponsePojo
+    -DummyRestApiBaseUrl
+    -JsonPlaceHolderTestData -->String methodu yapildi
+day09-01.06.2023
+
