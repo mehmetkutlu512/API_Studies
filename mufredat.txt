@@ -40,6 +40,8 @@ day07-30.05.2023
     -Post04
     -BookingResponsePojo
 day08-31.05.2023
+    -Post05_ObjectMapper_Map
+    -Post05_ObjectMapper_Pojo
     -Get13_ObjectMapper_Map
     -Get13_ObjectMapper_Pojo
     -Delete01
@@ -55,4 +57,16 @@ day09-01.06.2023
     -C03_PutRequest
     -Runner
     -AuthenticationHerOkuApp
+day10-03.06.2023
+    -C04_PatchRequest
+    -C05_DeleteRequest
+    -C06_GetRequest_Negative
+    -Country
+    -State
+    -GmiBank-->PostCountry
+    -GmiBankBaseUrl
+
+
+
+
 
