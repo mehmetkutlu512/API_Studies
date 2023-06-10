@@ -65,6 +65,12 @@ day10-03.06.2023
     -State
     -GmiBank-->PostCountry
     -GmiBankBaseUrl
+day11-04.06.2023
+    -AuthenticationGmiBank
+    -GetCustomer
+    -Account
+    -Customer
+    -User
 
 
 
